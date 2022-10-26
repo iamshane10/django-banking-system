@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Profile</h1>
+    Name:</h4> {{customer.name}} <br>
+	Account:</h4> {{customer.account}} <br>
+	Phone:</h4> {{customer.phone}} <br>
+    Age:</h4> {{customer.age}} <br>
+	Address:</h4> {{customer.address}} <br>
+	Balance:</h4> {{customer.balance}} <br>
+
+	<h3>Click <a href="{% url 'options' %}">here</a> to make a transaction.</h3>
+	
+{% endblock %}
